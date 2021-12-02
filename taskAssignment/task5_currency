@@ -1,0 +1,24 @@
+package taskTraining;
+
+import java.util.Scanner;
+
+public class task5_currency {
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Currency: ");
+		int N = sc.nextInt();
+		int a[]={100,50,10,5,2,1};
+		int count=0;
+		for(int i=0;i<6;i++) {
+
+		count+=N/a[i];
+		N=N%a[i];
+
+		}
+		System.out.println("Minimum Currency notes: "+count);
+
+		}
+
+	}
+	
+
